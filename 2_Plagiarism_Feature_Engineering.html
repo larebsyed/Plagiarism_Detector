@@ -16128,7 +16128,7 @@ Normalized LCS values:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define an ngram range</span>
@@ -16192,6 +16192,10 @@ Normalized LCS values:
 7-gram containment features created!
 8-gram containment features created!
 9-gram containment features created!
+LCS features created!
+
+Features:  [&#39;c_1&#39;, &#39;c_2&#39;, &#39;c_3&#39;, &#39;c_4&#39;, &#39;c_5&#39;, &#39;c_6&#39;, &#39;c_7&#39;, &#39;c_8&#39;, &#39;c_9&#39;, &#39;lcs_word&#39;]
+
 </pre>
 </div>
 </div>
@@ -16200,10 +16204,10 @@ Normalized LCS values:
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print some results </span>
@@ -16215,6 +16219,191 @@ Normalized LCS values:
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>c_1</th>
+      <th>c_2</th>
+      <th>c_3</th>
+      <th>c_4</th>
+      <th>c_5</th>
+      <th>c_6</th>
+      <th>c_7</th>
+      <th>c_8</th>
+      <th>c_9</th>
+      <th>lcs_word</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.398148</td>
+      <td>0.079070</td>
+      <td>0.009346</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.191781</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.000000</td>
+      <td>0.984694</td>
+      <td>0.964103</td>
+      <td>0.943299</td>
+      <td>0.922280</td>
+      <td>0.901042</td>
+      <td>0.879581</td>
+      <td>0.857895</td>
+      <td>0.835979</td>
+      <td>0.820755</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.869369</td>
+      <td>0.719457</td>
+      <td>0.613636</td>
+      <td>0.515982</td>
+      <td>0.449541</td>
+      <td>0.382488</td>
+      <td>0.319444</td>
+      <td>0.265116</td>
+      <td>0.219626</td>
+      <td>0.846491</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.593583</td>
+      <td>0.268817</td>
+      <td>0.156757</td>
+      <td>0.108696</td>
+      <td>0.081967</td>
+      <td>0.060440</td>
+      <td>0.044199</td>
+      <td>0.027778</td>
+      <td>0.011173</td>
+      <td>0.316062</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.544503</td>
+      <td>0.115789</td>
+      <td>0.031746</td>
+      <td>0.005319</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.242574</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.329502</td>
+      <td>0.053846</td>
+      <td>0.007722</td>
+      <td>0.003876</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.161172</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0.590308</td>
+      <td>0.150442</td>
+      <td>0.035556</td>
+      <td>0.004464</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.301653</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0.765306</td>
+      <td>0.709898</td>
+      <td>0.664384</td>
+      <td>0.625430</td>
+      <td>0.589655</td>
+      <td>0.553633</td>
+      <td>0.520833</td>
+      <td>0.487805</td>
+      <td>0.454545</td>
+      <td>0.621711</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.759777</td>
+      <td>0.505618</td>
+      <td>0.395480</td>
+      <td>0.306818</td>
+      <td>0.245714</td>
+      <td>0.195402</td>
+      <td>0.150289</td>
+      <td>0.110465</td>
+      <td>0.070175</td>
+      <td>0.484305</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0.884444</td>
+      <td>0.526786</td>
+      <td>0.340807</td>
+      <td>0.247748</td>
+      <td>0.180995</td>
+      <td>0.150000</td>
+      <td>0.118721</td>
+      <td>0.091743</td>
+      <td>0.064516</td>
+      <td>0.597458</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -16223,10 +16412,10 @@ Normalized LCS values:
 <p>So, you'll want to choose your features based on which pairings have the lowest correlation. These correlation values range between 0 and 1; from low to high correlation, and are displayed in a <a href="https://www.displayr.com/what-is-a-correlation-matrix/">correlation matrix</a>, below.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -16242,6 +16431,191 @@ Normalized LCS values:
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>c_1</th>
+      <th>c_2</th>
+      <th>c_3</th>
+      <th>c_4</th>
+      <th>c_5</th>
+      <th>c_6</th>
+      <th>c_7</th>
+      <th>c_8</th>
+      <th>c_9</th>
+      <th>lcs_word</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>c_1</th>
+      <td>1.00</td>
+      <td>0.94</td>
+      <td>0.90</td>
+      <td>0.89</td>
+      <td>0.88</td>
+      <td>0.87</td>
+      <td>0.87</td>
+      <td>0.87</td>
+      <td>0.86</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>c_2</th>
+      <td>0.94</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.97</td>
+      <td>0.96</td>
+      <td>0.95</td>
+      <td>0.94</td>
+      <td>0.94</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <th>c_3</th>
+      <td>0.90</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.98</td>
+      <td>0.97</td>
+      <td>0.96</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>c_4</th>
+      <td>0.89</td>
+      <td>0.98</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.98</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <th>c_5</th>
+      <td>0.88</td>
+      <td>0.97</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <th>c_6</th>
+      <td>0.87</td>
+      <td>0.96</td>
+      <td>0.98</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <th>c_7</th>
+      <td>0.87</td>
+      <td>0.95</td>
+      <td>0.98</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <th>c_8</th>
+      <td>0.87</td>
+      <td>0.94</td>
+      <td>0.97</td>
+      <td>0.98</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <th>c_9</th>
+      <td>0.86</td>
+      <td>0.94</td>
+      <td>0.96</td>
+      <td>0.98</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <th>lcs_word</th>
+      <td>0.97</td>
+      <td>0.98</td>
+      <td>0.97</td>
+      <td>0.95</td>
+      <td>0.95</td>
+      <td>0.94</td>
+      <td>0.93</td>
+      <td>0.92</td>
+      <td>0.91</td>
+      <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -16266,7 +16640,7 @@ Normalized LCS values:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Takes in dataframes and a list of selected features (column names) </span>
@@ -16305,10 +16679,10 @@ Normalized LCS values:
 <h3 id="Test-cells">Test cells<a class="anchor-link" href="#Test-cells">&#182;</a></h3><p>Below, test out your implementation and create the final train/test data.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -16327,6 +16701,27 @@ Normalized LCS values:
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Tests Passed!
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -16334,10 +16729,10 @@ Normalized LCS values:
 <p>Define a list of features you'd like to include in your final mode, <code>selected_features</code>; this is a list of the features names you want to include.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Select your list of features, this should be column names from features_df</span>
@@ -16362,6 +16757,40 @@ Normalized LCS values:
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Training size:  70
+Test size:  25
+
+Training df sample: 
+ [[0.39814815 0.07906977 0.19178082]
+ [0.86936937 0.71945701 0.84649123]
+ [0.59358289 0.2688172  0.31606218]
+ [0.54450262 0.11578947 0.24257426]
+ [0.32950192 0.05384615 0.16117216]
+ [0.59030837 0.15044248 0.30165289]
+ [0.75977654 0.50561798 0.48430493]
+ [0.51612903 0.07027027 0.27083333]
+ [0.44086022 0.11891892 0.22395833]
+ [0.97945205 0.91724138 0.9       ]]
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -16393,7 +16822,7 @@ Normalized LCS values:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -16428,10 +16857,10 @@ Normalized LCS values:
 <h3 id="Test-cells">Test cells<a class="anchor-link" href="#Test-cells">&#182;</a></h3><p>Test that your code produces the correct format for a <code>.csv</code> file, given some text features and labels.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -16461,10 +16890,32 @@ Normalized LCS values:
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Path created: test_csv/to_delete.csv
+Tests passed!
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># delete the test csv file, generated above</span>
@@ -16482,10 +16933,10 @@ Normalized LCS values:
 <p>If you've passed the tests above, run the following cell to create <code>train.csv</code> and <code>test.csv</code> files in a directory that you specify! This will save the data in a local directory. Remember the name of this directory because you will reference it again when uploading this data to S3.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># can change directory, if you want</span>
@@ -16504,16 +16955,38 @@ Normalized LCS values:
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Path created: plagiarism_data/train.csv
+Path created: plagiarism_data/test.csv
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Up-Next">Up Next<a class="anchor-link" href="#Up-Next">&#182;</a></h2><p>Now that you've done some feature engineering and created some training and test data, you are ready to train and deploy a plagiarism classification model. The next notebook will utilize SageMaker resources to train and test a model that you design.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html 2_Plagiarism_Feature_Engineering.ipynb
@@ -16522,6 +16995,29 @@ Normalized LCS values:
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[NbConvertApp] WARNING | Config option `kernel_spec_manager_class` not recognized by `NbConvertApp`.
+[NbConvertApp] Converting notebook 2_Plagiarism_Feature_Engineering.ipynb to html
+[NbConvertApp] Writing 706977 bytes to 2_Plagiarism_Feature_Engineering.html
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
